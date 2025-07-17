@@ -1,0 +1,246 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Milk Tea",
+      "description": "Premium milk tea with various flavors and toppings"
+    },
+    {
+      "id": 2,
+      "name": "Fruit Tea",
+      "description": "Refreshing fruit-based tea beverages"
+    },
+    {
+      "id": 3,
+      "name": "Coffee",
+      "description": "Classic coffee drinks and specialty brews"
+    },
+    {
+      "id": 4,
+      "name": "Specialty Drinks",
+      "description": "Unique seasonal and signature beverages"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Classic Milk Tea",
+      "price": 4.5,
+      "categoryId": 1,
+      "toppings": ["Tapioca Pearls", "Grass Jelly", "Pudding", "Extra Sugar", "Less Ice"],
+      "inventory": {
+        "quantity": 25,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Taro Milk Tea",
+      "price": 5.0,
+      "categoryId": 1,
+      "toppings": ["Tapioca Pearls", "Taro Balls", "Pudding", "Whipped Cream", "Less Sugar"],
+      "inventory": {
+        "quantity": 18,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Thai Milk Tea",
+      "price": 4.8,
+      "categoryId": 1,
+      "toppings": ["Tapioca Pearls", "Coconut Jelly", "Condensed Milk", "Extra Sweet"],
+      "inventory": {
+        "quantity": 12,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Matcha Milk Tea",
+      "price": 5.2,
+      "categoryId": 1,
+      "toppings": ["Red Bean", "Matcha Powder", "Almond Jelly", "Oat Milk", "Half Sugar"],
+      "inventory": {
+        "quantity": 12,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Brown Sugar Milk Tea",
+      "price": 5.8,
+      "categoryId": 1,
+      "toppings": ["Brown Sugar Pearls", "Fresh Milk", "Extra Brown Sugar", "Whipped Cream"],
+      "inventory": {
+        "quantity": 4,
+        "status": "low_stock"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Passion Fruit Green Tea",
+      "price": 4.2,
+      "categoryId": 2,
+      "toppings": ["Passion Fruit Pulp", "Lychee Jelly", "Less Sugar", "Extra Ice"],
+      "inventory": {
+        "quantity": 22,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Mango Green Tea",
+      "price": 4.5,
+      "categoryId": 2,
+      "toppings": ["Fresh Mango", "Mango Popping Pearls", "Coconut Jelly", "No Sugar"],
+      "inventory": {
+        "quantity": 15,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Lemon Honey Tea",
+      "price": 3.8,
+      "categoryId": 2,
+      "toppings": ["Fresh Lemon", "Honey", "Lemon Slices", "Extra Honey"],
+      "inventory": {
+        "quantity": 30,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Strawberry Fruit Tea",
+      "price": 4.6,
+      "categoryId": 2,
+      "toppings": ["Fresh Strawberries", "Strawberry Popping Pearls", "Aloe Vera", "Light Sugar"],
+      "inventory": {
+        "quantity": 8,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Peach Oolong Tea",
+      "price": 4.3,
+      "categoryId": 2,
+      "toppings": ["Peach Slices", "Peach Jelly", "Honey", "Less Ice"],
+      "inventory": {
+        "quantity": 10,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Espresso",
+      "price": 3.5,
+      "categoryId": 3,
+      "toppings": ["Extra Shot", "Sugar", "Honey"],
+      "inventory": {
+        "quantity": 35,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Cappuccino",
+      "price": 4.2,
+      "categoryId": 3,
+      "toppings": ["Foam Art", "Cinnamon", "Extra Shot", "Vanilla Syrup"],
+      "inventory": {
+        "quantity": 28,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Caffe Latte",
+      "price": 4.8,
+      "categoryId": 3,
+      "toppings": ["Extra Shot", "Vanilla Syrup", "Caramel Syrup", "Almond Milk", "Oat Milk"],
+      "inventory": {
+        "quantity": 20,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Iced Coffee",
+      "price": 3.8,
+      "categoryId": 3,
+      "toppings": ["Simple Syrup", "Cream", "Caramel Syrup", "Vanilla Syrup"],
+      "inventory": {
+        "quantity": 3,
+        "status": "low_stock"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Mocha",
+      "price": 5.0,
+      "categoryId": 3,
+      "toppings": ["Whipped Cream", "Chocolate Syrup", "Extra Shot", "Marshmallows"],
+      "inventory": {
+        "quantity": 16,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Cheese Foam Green Tea",
+      "price": 5.5,
+      "categoryId": 4,
+      "toppings": ["Cheese Foam", "Sea Salt", "Tapioca Pearls", "Less Sugar"],
+      "inventory": {
+        "quantity": 9,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Dirty Matcha Latte",
+      "price": 6.0,
+      "categoryId": 4,
+      "toppings": ["Matcha Powder", "Espresso Shot", "Oat Milk", "Brown Sugar"],
+      "inventory": {
+        "quantity": 4,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Coconut Milk Tea",
+      "price": 5.3,
+      "categoryId": 4,
+      "toppings": ["Coconut Milk", "Coconut Jelly", "Sago Pearls", "Pandan Syrup"],
+      "inventory": {
+        "quantity": 14,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Butterfly Pea Lemonade",
+      "price": 4.7,
+      "categoryId": 4,
+      "toppings": ["Butterfly Pea Flowers", "Fresh Lemon", "Honey", "Color Changing"],
+      "inventory": {
+        "quantity": 11,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 20,
+      "name": "Black Sesame Milk Tea",
+      "price": 5.4,
+      "categoryId": 4,
+      "toppings": ["Black Sesame Paste", "Sesame Balls", "Almond Milk", "Rock Sugar"],
+      "inventory": {
+        "quantity": 2,
+        "status": "low_stock"
+      }
+    }
+  ]
+}

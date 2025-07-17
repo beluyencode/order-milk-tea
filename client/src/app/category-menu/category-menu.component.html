@@ -1,0 +1,43 @@
+<div class="menu" *ngIf="category">
+    <h1>
+        {{ category.name }}
+        <p>
+            {{ category.description }}
+        </p>
+    </h1>
+    <div class="category-menu">
+        <div *ngFor="let item of data" class="category-item"
+            [ngClass]=" { 'out' : item.inventory.status === 'out_of_stock' }">
+            <h3>{{ item.name }}</h3>
+            <div class="line"></div>
+            <p class="notes" [title]="item.toppings.join(', ')">
+                <span class="title">Toppings:</span>
+                <br>
+                {{ item.toppings.join(', ') }}
+            </p>
+            <span class="price">${{ item.price }}</span>
+            <div class="footer-btn">
+                <button (click)="openPopup(item)">Add to Cart</button>
+            </div>
+            <div class="label-out-of-stock" *ngIf="item.inventory.status === 'out_of_stock'">Out of Stock</div>
+        </div>
+    </div>
+</div>
+
+<div class="add-to-cart-popup" *ngIf="selectDrink">
+    <div class="popup-content">
+        <h2>{{ selectDrink.name }}</h2>
+        <p>Price: ${{ selectDrink.price }}</p>
+        <div class="toppings-selection">
+            <span class="title">Toppings:</span>
+            <div class="select" *ngFor="let topping of selectDrink.toppings">
+                <input type="checkbox" [id]="topping.name" [value]="topping" [(ngModel)]="topping.selected">
+                <label [for]="topping.name">{{ topping.name }}</label>
+            </div>
+        </div>
+        <div class="popup-footer">
+            <button class="add-to-cart-btn" (click)="addToCart(selectDrink)">Add to Cart</button>
+            <button class="close-btn" (click)="selectDrink = null">Close</button>
+        </div>
+    </div>
+</div>

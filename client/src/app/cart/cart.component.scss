@@ -1,0 +1,202 @@
+.cart-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(59, 72, 105);
+    color: white;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    z-index: 1;
+
+    &:hover {
+        background-color: rgb(18, 41, 82);
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .cart-count {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e93131;
+        color: white;
+        border-radius: 50%;
+        font-size: 9px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.cart-content {
+    position: fixed;
+    right: -270px;
+    width: 270px;
+    transition: all 0.3s ease;
+    padding: 16px;
+    box-sizing: border-box;
+    height: 100%;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    z-index: 2;
+
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: rgb(59, 72, 105);
+    }
+
+    .cart-item {
+        border-bottom: 1px solid rgb(59, 72, 105);
+        padding: 16px 0;
+
+        p {
+            margin: 0;
+        }
+
+        .cart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+            gap: 20px;
+
+            .cart-item-name {
+                font-weight: bold;
+                color: rgb(18, 41, 82);
+                font-size: 16px;
+            }
+
+            .remove-item-btn {
+                cursor: pointer;
+                color: rgb(59, 72, 105);
+                font-size: 14px;
+                font-weight: bold;
+
+                &:hover {
+                    color: #e93131;
+                }
+            }
+        }
+
+        .item-price {
+            margin-right: auto;
+            color: rgb(18, 41, 82);
+            font-size: 16px;
+        }
+
+        .quantity {
+            display: flex;
+            margin-top: 10px;
+            justify-content: flex-end;
+            align-items: center;
+
+
+            .item-count {
+                margin: 0 10px;
+                font-size: 18px;
+            }
+
+            button {
+                user-select: none;
+                padding: 0;
+                margin: 0;
+                border: none;
+                background-color: white;
+                color: rgb(18, 41, 82);
+                cursor: pointer;
+                width: 20px;
+                height: 26px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 25px;
+
+                &:hover {
+                    color: #e93131;
+                }
+            }
+        }
+
+        .cart-item-toppings {
+            font-size: 14px;
+            color: rgb(100, 100, 100);
+
+            .topping-label {
+                font-weight: bold;
+                font-size: 16px;
+                margin-bottom: 8px;
+                display: block;
+            }
+
+            .topping {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .remove-topping {
+                    cursor: pointer;
+                    color: rgb(59, 72, 105);
+                    font-size: 14px;
+
+                    &:hover {
+                        color: #e93131;
+                    }
+                }
+            }
+        }
+    }
+
+    .total-price {
+        margin-top: 10px;
+    }
+
+    .cart-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+
+        .close {
+            background-color: #2a2828 !important;
+
+            &:hover {
+                background-color: #1f1d1d !important;
+            }
+        }
+
+
+        .footer-cart-btn {
+            background-color: rgb(59, 72, 105);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(18, 41, 82);
+            }
+        }
+    }
+
+
+}
+
+.cart-content.active {
+    right: 0 !important;
+}

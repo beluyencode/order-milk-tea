@@ -1,0 +1,11 @@
+<div class="sidebar">
+    <h2>
+        Milk Tea Store
+    </h2>
+    <div class="sidebar-content">
+        <div class="sidebar-item" [routerLink]="'/category/' + category.id" [routerLinkActive]="['active']"
+            *ngFor="let category of categories" (click)="selectCategory(category)">
+            <a [routerLink]="['/category', category.id]">{{ category.name }}</a>
+        </div>
+    </div>
+</div>

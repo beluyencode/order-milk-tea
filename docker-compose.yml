@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  server:
+    build: ./server
+    container_name: milk-tea-server
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - milk-tea-network
+    restart: unless-stopped
+
+  client:
+    build: ./client
+    container_name: milk-tea-client
+    ports:
+      - "80:80"
+    depends_on:
+      - server
+    networks:
+      - milk-tea-network
+    restart: unless-stopped
+
+networks:
+  milk-tea-network:
+    driver: bridge
