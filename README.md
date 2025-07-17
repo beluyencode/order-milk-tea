@@ -2,19 +2,6 @@
 
 A full-stack web application for ordering milk tea, built with Angular (frontend) and Node.js (backend).
 
-## 📋 Table of Contents
-
-- [Project Overview](#project-overview)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Development](#development)
-- [Docker Deployment](#docker-deployment)
-- [API Documentation](#api-documentation)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## 🎯 Project Overview
 
 This application allows users to browse milk tea categories, view products, and place orders. The system features a responsive design with category-based navigation and a seamless ordering experience.
@@ -139,21 +126,6 @@ http://localhost:3000
 #### Menu Items
 - `GET /api/menu/:categoryId` - Get menu items by category
 
-*Note: Actual API endpoints may vary based on server implementation*
-
-### Available Scripts
-
-#### Frontend
-```bash
-npm i
-npm start          # Start development server
-```
-
-#### Backend
-```bash
-npm i
-npm start          # Start server
-```
 
 ### Accessing the Application
 
